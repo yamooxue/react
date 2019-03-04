@@ -1,0 +1,51 @@
+@import "common";
+ .todolist{
+   input {
+     .input(#595fb6)
+  }
+  .addinput{
+    margin: 10px auto;
+  }
+   button {
+    width: 80px;
+    height: 40px;
+    appearance: none;
+    border: 0;
+    background: #595fb6;
+    padding: 0;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0
+  }
+  ul{
+    li{
+      line-height: 40px;
+      background: #f1ffa6;
+      margin-bottom: 10px;
+      padding: 0 10px;
+      overflow: hidden;
+      &:first-child {
+        margin-top: 10px;
+      }
+      i{
+        transition:.5s all;
+        float: right;
+        color: #d85151;
+        font-style: normal;
+        cursor: pointer;
+        opacity: 0;
+      }
+      &:hover{
+        i{
+          opacity: 1;
+        }
+      }
+    }
+    .completed{
+      background: #eee;
+      text-decoration: line-through;
+    }
+  }
+}
+  

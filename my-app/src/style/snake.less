@@ -1,0 +1,36 @@
+@import "common";
+.snake-move-area{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background:#000;
+  .body{
+    overflow: hidden;
+    .el{
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      position: absolute;
+      transition: left .1s, top .1s;
+      border-radius: 50%;
+      left: 0;
+      top: 0;
+      &:nth-child(odd){
+        background: #ddd;
+      }
+      &:last-child{
+        background: #fc0
+      }
+    }
+    .food{
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      background: #0c3;
+      position: absolute;
+      right: 0;
+      top: 20px;
+    }
+  }
+  
+}

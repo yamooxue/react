@@ -1,0 +1,77 @@
+
+@import 'animate.min.css';
+@blue:#595fb6;
+
+.animated {
+    animation-duration: .5s;
+}
+.hide {
+  display: none;
+}
+.clearfix{
+  position: relative;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+*html .clearfix {
+  height: 1%;
+}
+.del-el::after{
+  content: 'x';
+  float: right;
+  font-size: 16px;
+  color: #c00
+}
+.mobile-main{
+  width: 500px;
+  margin: 10px auto;
+}
+.box-center(){
+  &:before {
+    vertical-align: middle;
+    content: "";
+    display: inline-block;
+    height: 100%;
+  }
+}
+.input(@color:#eee,@focus:@color) {
+  width: 100%;
+  height: 40px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  padding-right: 80px;
+  padding-left: 10px;
+  border: 1px solid @color;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+  &:focus{
+    border: 1px solid @focus;
+    outline:none
+  }
+}
+
+.button(@color:#c0392b){
+  float: right;
+  border: none;
+  padding: 0.6em 1.2em;
+  background: @color;
+  color: #fff;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 10px;
+  border-radius: 2px;
+  &:hover {
+      background: darken(@color,10%);
+  }
+}
