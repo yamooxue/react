@@ -1,9 +1,9 @@
 # react练手
+##### 实现方式均未使用参考
 
 #### react
 #### redux
 #### webpack
-##### 皆为原创练手小模块
 
 ## 拼图
 ![Image text](https://raw.githubusercontent.com/yamooxue/react/master/image/1.png
